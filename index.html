@@ -4,53 +4,182 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PhoneStop</title>
     <link rel="stylesheet" href="https://ice-cream-ui.netlify.app/main.css" />
     <link rel="stylesheet" href="styles.css" />
-  </head>
-  <script
+    <script
     src="https://kit.fontawesome.com/447874f45e.js"
     crossorigin="anonymous"
   ></script>
+  
+  </head>
+
   <body>
     <header class="flex nav-bar">
-
-      <div class="flex jc-sb header-items-left">
-        <div class="header-name">PhoneStop</div>
-        <a href="#" class="header-links">Home</a>
-        <a href="#" class="header-links">Products</a>
+      <div class="flex jc-sa header-items-left">
+        <i class="fas fa-bars home-side-bar side-bar-ico"></i>
+        <div class="header-name rubik-font">PhoneStop</div>
+        
+        <a href="#" class="header-links rubik-font">Home</a>
+        <a href="#" class="header-links rubik-font">Products</a>
       </div>
 
+      <div class="header-search-box mgn-lt-auto mgn-rt-auto">
+      <i class="fas fa-search header-search"></i>
       <input
         type="text"
         placeholder="search here"
-        class="mgn-lt-auto mgn-rt-auto header-input text-center"
+        class=" header-input text-center"
       >
-      
+      </div>
+
       <div class="header-items-right flex mgn-lt-auto jc-sa">
 
         <div class="header-icon-links flex flex-direct-col align-i-center">
-          <i class="fas fa-heart"></i>
-          <div class="header-ic-link-description">Wishlist</div>
+          <i class="fas fa-heart header-icons"></i>
+          <div class="header-ic-link-description rubik-font">Wishlist</div>
         </div>
 
           <div class="header-icon-links flex flex-direct-col align-i-center">
-            <i class="fas fa-cart-plus"></i>
-            <div class="header-ic-link-description">Cart</div>
+            <i class="fas fa-cart-plus header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Cart</div>
           </div>
 
           <div class="header-icon-links flex flex-direct-col align-i-center">
-            <i class="fas fa-user-circle"></i>
-            <div class="header-ic-link-description">Login</div>
+            <i class="fas fa-user-circle header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Login</div>
           </div>
     </header>
-    <div>
+    <aside class="drawer-sidebar">
+      <div class="drawer-user-info">
+        <div class="drawer-top-side">
+          <h3>User Name</h3>
+          <i class="fas fa-times"></i>
+        </div>
+        <p>Account name</p>
+      </div>
+      <div class="drawer-content">
+        <p class="drawer-line">Profile</p>
+        <ul class="drawer-items general">
+          <li><i class="fas fa-heart header-icons"></i></li>
+          <li>Wish-list</li>
+        </ul>
+    
+        <ul class="drawer-items general">
+          <li><i class="fas fa-user-circle header-icons"></i></li>
+          <li>Login</li>
+        </ul>
+    
+        <ul class="drawer-items general">
+          <li>
+            <i class="fas fa-cart-plus header-icons"></i>
+          </li>
+          <li>Cart</li>
+        </ul>
+    
+       
+      </div>
+    </aside>
+    <main class="drawer-whole ">
+      <div class="drawer-main">
         <div class="top-image-container">
             <img src="/Images/tp29-ning-18-autumn.jpg" alt="Phone-img" class="top-img">
-            <div class="top-img-overlay">Branded SMART PHONES on 40% Discount</div>
-            
+            <div class="top-img-overlay rubik-font">Branded SMART PHONES on 40% Discount</div>
+            <div class="brand-intro-container">
+              <h3>
+                <span class="brand-intro-start rubik-font">
+                Smart phones with exciting new features and up to date Specs </span> <span class="brand-intro-end rubik-font"> exclusively available only on </span > <span class="brand-name-on-intro rubik-font">      PhoneStop</span> </h3>
+            </div>
+        </div>  
+
+        <h3 class="text-center category-title head-font mgn-tp-4">Categories</h3>
+
+        <div class="products-spec-display rubik-font">
+          <h4 class="spec-display-head">Top-notch Processor</h4>
+          <h4 class="spec-display-head">High-end GPU for gamers</h4>
+          <h4 class="spec-display-head">Pixel perfect Camera for memories</h4>
+          <div class="img-display-container"><img class="display-spec-img" src="/Images/1-198.jpg" alt="Processor"></div>
+          <div class="img-display-container"><img class="display-spec-img" src="/Images/download_1_6_4.jpg" alt="GPU"></div>
+          <div class="img-display-container"><img class="display-spec-img" src="/Images/oppo-reno.webp" alt="Camera"></div>
         </div>
-        
-    </div>
+
+         
+
+         <div class="best-seller-head head-font mgn-lt-4">
+            Best selling products
+         </div>
+
+         <div class="flex flex-wrap best-selling col-gap-2 row-gap-2 jc-center">
+           <div class="product-cards flex flex-direct-col jc-sb">
+             <div class=" product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto">
+                <img src="/Images/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfwyzztfnh.jpeg" alt="phone" class="display-spec-img">
+             </div>
+            <div>
+             <h5 class="rubik-font  mgn-tp-0-5 mgn-lt-1 product-card-head">APPLE iPhone 12 (Black, 64Gb)</h5>
+             <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1"> <span class="top-star same-star  chng-pad"> 5 <i class="fas fa-star green-star"></i></span>
+             <span class="font-wt-black card-price">₹49,000</span> </div>
+             <button class="all-btn-el add-to-cart product-card-buy mgn-tp-1">
+              <i class="fas fa-shopping-cart "></i> ADD TO CART
+            </button>
+            </div>
+           </div>
+             
+           <div class="product-cards flex flex-direct-col jc-sb">
+            <div class=" product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto">
+               <img src="/Images/63796658-96e1-48c4-8b7e-4aa910e81c13_182x182.jpg" alt="phone" class="display-spec-img">
+            </div>
+           <div>
+            <h5 class="rubik-font  mgn-tp-0-5 mgn-lt-1 product-card-head">ONE PLUS 9 Pro (Morning mist)</h5>
+            <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1"> <span class="good-star  same-star chng-pad"> 4 <i class="fas fa-star green-star"></i></span>
+            <span class="font-wt-black card-price">₹35,000</span> </div>
+            <button class="all-btn-el add-to-cart product-card-buy mgn-tp-1">
+             <i class="fas fa-shopping-cart "></i> ADD TO CART
+           </button>
+           </div>
+          </div>
+
+           <div class="product-cards flex flex-direct-col jc-sb">
+            <div class=" product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto">
+               <img src="/Images/305e4829-81b4-423d-88d9-f550bab2e15721151133_182x182.jpg" alt="phone" class="display-spec-img">
+            </div>
+           <div>
+            <h5 class="rubik-font  mgn-tp-0-5 mgn-lt-1 product-card-head">SAMSUNG (BLACK 6GB)</h5>
+            <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1"> <span class="top-star same-star chng-pad"> 5 <i class="fas fa-star green-star"></i></span>
+            <span class="font-wt-black card-price">₹9,000</span> </div>
+            <button class="all-btn-el add-to-cart product-card-buy mgn-tp-1">
+             <i class="fas fa-shopping-cart "></i> ADD TO CART
+           </button>
+           </div>
+          </div>
+
+           <div class="product-cards flex flex-direct-col jc-sb">
+            <div class=" product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto">
+               <img src="/Images/305e4829-81b4-423d-88d9-f550bab2e15721151133_182x182.jpg" alt="phone" class="display-spec-img">
+            </div>
+           <div>
+            <h5 class="rubik-font  mgn-tp-0-5 mgn-lt-1 product-card-head">SAMSUNG (BLACK 8GB)</h5>
+            <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1"> <span class="good-star same-star chng-pad"> 4 <i class="fas fa-star green-star"></i></span>
+            <span class="font-wt-black card-price">₹12,000</span> </div>
+            <button class="all-btn-el add-to-cart product-card-buy mgn-tp-1">
+             <i class="fas fa-shopping-cart "></i> ADD TO CART
+           </button>
+           </div>
+          </div>
+         </div>
+
+        <div class="best-seller-head       head-font mgn-lt-4"> 
+          Shop by Brand
+       </div>
+       <div class="flex flex-wrap mgn-tp-4 brand-logo-container">
+         <div class="brand-img-container "> <img src="Images/58687-logo-computer-apple-icons-free-hd-image.png" alt="apple-logo" class="display-spec-img"> </div>
+         <div class="brand-img-container"> <img src="Images/OnePlus-Rebrand-Red.png" alt="Oneplus" class="display-spec-img"> </div>
+         <div class="brand-img-container"> <img src="Images/Samsung-Logo.png" alt="Samsung" class="display-spec-img"> </div>
+        </div>
+       
+      </div>   
+    </main>
+    <footer class="e-comm-foot">This project's sole purpose is of being a Portfolio website no brands and items listed are being provided, peace ✌</footer>
+    <script src="https://ice-cream-ui.netlify.app/components/navigation/drawer/drawer.js"></script>
+   
   </body>
 </html>

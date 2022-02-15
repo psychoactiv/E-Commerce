@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Oswald:wght@500;700&family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
 /* Reset CSS */
 *,
 *::before,
@@ -9,14 +15,19 @@
   list-style: none;
   --dark-cyan: darkcyan;
   --grey: grey;
+  --teal: teal;
 }
-html {
-  font-size: 62.5%;
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+}
+
+.head-font {
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* Navbar */
 .nav-bar {
-  font-family: "Rubik", sans-serif;
   padding: 1rem;
   height: 12vh;
   padding: 0.5rem;
@@ -30,12 +41,17 @@ html {
 }
 
 .header-items-left {
-  width: 30rem;
+  width: 17rem;
+  margin: 0.5rem 0;
 }
 
 .header-items-right {
-  width: 15rem;
-  margin-right: 0.5rem;
+  display: none;
+}
+
+.home-side-bar {
+  align-self: center;
+  font-size: 2rem;
 }
 
 .header-links {
@@ -43,6 +59,7 @@ html {
   font-size: 1.4rem;
   color: var(--dark-cyan);
   align-self: center;
+  display: none;
 }
 
 .header-links:hover {
@@ -59,60 +76,307 @@ html {
 
 .header-input {
   border-radius: 10px;
-  width: 20rem;
+  width: 10rem;
   height: 3rem;
   border: 1px solid var(--grey);
+  text-align: right;
+  padding-right: 4px;
+}
+
+.home-side-bar.side-bar-ico {
+  background-color: var(--white);
 }
 
 .header-input:focus {
   outline-color: var(--dark-cyan);
 }
 
-.top-image-container {
-  height: max-content;
-  width: 100%;
+.header-search-box {
   position: relative;
-  overflow: hidden
+  width: max-content;
+  height: max-content;
+}
+
+.header-search {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  color: var(--grey);
+}
+
+.header-icons {
+  cursor: pointer;
+}
+
+.header-icons:hover {
+  color: var(--teal);
+}
+
+.top-image-container {
+  overflow: hidden;
+  display: grid;
 }
 
 .top-img {
   width: 100%;
   height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
 }
 
 .top-img-overlay {
-  position: absolute;
-  width: 100%;
-  top: 4%;
-  font-size: 2rem;
+  font-size: 1rem;
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-items: end;
+  padding-top: 0rem;
+  overflow: hidden;
 }
 
-@media screen and (min-width: 800px) {
-    html {
-      font-size: 50%;
-    }
-    .top-img-overlay {
-      font-size: 2rem;
-    }
+.brand-intro-container {
+  width: 70%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.brand-intro-start {
+  color: var(--dark-cyan);
+  font-size: 1rem;
+}
+
+.brand-intro-end {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.brand-name-on-intro {
+  color: var(--dark800);
+  font-size: 2rem;
+}
+
+.products-spec-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 2rem auto 4rem auto;
+  justify-items: center;
+  row-gap: 1rem;
+  overflow: hidden;
+}
+
+.display-spec-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.display-spec-img:hover {
+  opacity: 0.9;
+}
+
+.spec-display-head {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.best-seller-head {
+  font-size: 2rem;
+}
+
+.category-title {
+  font-size: 1rem;
+}
+
+.product-display-img-container {
+  height: 10rem;
+  width: max-content;
+}
+
+.product-card-head {
+  font-size: 1.5rem;
+  color: var(--grey700);
+}
+
+.best-selling {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.product-cards {
+  width: 13rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 2px var(--grey);
+}
+
+.same-star.chng-pad {
+  padding: 0.3rem 0.5rem;
+  color: var(--white);
+}
+
+.display-by-brand {
+}
+
+.brand-img-container {
+  height: 15rem;
+  width: max-content;
+  margin: 0auto;
+}
+
+.brand-logo-container {
+  justify-content: center;
+}
+
+.all-btn-el.add-to-cart.product-card-buy {
+  padding: 0.7rem 1rem;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.card-price {
+  font-size: 1.5rem;
+}
+
+.drawer-content .drawer-line {
+  font-size: 1.5rem;
+}
+.drawer-items.general li {
+  padding: 4%;
+  font-size: 1.5rem;
+}
+.drawer-items.general {
+  height: max-content;
+}
+.e-comm-foot {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark800);
+  color: var(--white);
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 70%;
   }
+  .header-items-right {
+    flex-shrink: 2;
+  }
+  .top-img-overlay {
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+  }
+  .brand-intro-start {
+    color: var(--dark-cyan);
+    font-size: 1.5rem;
+  }
+
+  .brand-intro-end {
+    color: var(--grey);
+    font-size: 1.5rem;
+  }
+
+  .brand-name-on-intro {
+    color: var(--dark800);
+    font-size: 2rem;
+  }
+  .category-title {
+    font-size: 2rem;
+  }
+}
+
+.drawer-items.general {
+  justify-content: start;
+}
 
 @media screen and (min-width: 800px) {
   html {
     font-size: 80%;
   }
+  .header-items-left {
+    width: 35rem;
+  }
+  .header-items-right {
+    display: flex;
+    width: 15rem;
+    margin: 0.5rem 0;
+  }
+  .header-input {
+    flex-shrink: 2;
+  }
   .top-img-overlay {
     font-size: 2rem;
+    padding-top: 2.5rem;
+  }
+  .brand-intro-start {
+    color: var(--dark-cyan);
+    font-size: 2.5rem;
+  }
+
+  .brand-intro-end {
+    color: var(--grey);
+    font-size: 2.5rem;
+  }
+
+  .brand-name-on-intro {
+    color: var(--dark800);
+    font-size: 3.5rem;
+  }
+  .home-side-bar.side-bar-ico {
+    display: none;
+  }
+  .header-links {
+    display: block;
+  }
+  .drawer-items.general li {
+    padding: 4%;
+    font-size: 2rem;
+  }
+  .category-title {
+    font-size: 3rem;
+  }
+  .header-input {
+    border-radius: 10px;
+    width: 15rem;
+    height: 3rem;
+    border: 1px solid var(--grey);
+    text-align: center;
+    padding-right: 4px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1250px) {
   html {
     font-size: 100%;
   }
 
   .top-img-overlay {
     font-size: 3rem;
+  }
+
+  .brand-intro-start {
+    color: var(--dark-cyan);
+    font-size: 3rem;
+  }
+
+  .brand-intro-end {
+    color: var(--grey);
+    font-size: 3rem;
+  }
+
+  .brand-name-on-intro {
+    color: var(--dark800);
+    font-size: 4rem;
+  }
+  .category-title {
+    font-size: 4rem;
   }
 }
