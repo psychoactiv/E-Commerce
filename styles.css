@@ -36,13 +36,29 @@ html {
   overflow: hidden;
 }
 
+.head-phone-logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
 .header-name {
   font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(111, 112, 112); */
+  border-radius: 9px;
+  color: rgb(111, 112, 112);
 }
 
 .header-items-left {
   width: 17rem;
   margin: 0.5rem 0;
+}
+
+.head-name-links-flex {
+  width: 100%;
 }
 
 .header-items-right {
@@ -252,30 +268,46 @@ html {
   height: max-content;
 }
 .e-comm-foot {
-  height: 15vh;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2rem;
-  justify-content: center;
-  align-items: center;
+  height: max-content;
   background-color: var(--dark800);
   color: var(--white);
   font-size: 1rem;
   text-align: center;
 }
-.redirect-product-page{
+.footer-links {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: max-content;
+  padding: 3rem;
+}
+.footer-links a {
+  display: inline-block;
+  padding: 0.5rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: aqua;
+}
+.disclaimer-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.redirect-product-page {
   border-radius: 3px;
   border: none;
   background-color: var(--white);
 }
 
-.redirect-product-page:hover{
-  color: var(--blue-alert)
+.redirect-product-page:hover {
+  color: var(--blue-alert);
 }
 
-.redirect-product-page a{
-  text-decoration:none;
-  color: var(--dark700)
+.redirect-product-page a {
+  text-decoration: none;
+  color: var(--dark700);
 }
 @media screen and (min-width: 450px) {
   html {
@@ -317,6 +349,7 @@ html {
   }
   .header-items-left {
     width: 35rem;
+    margin: 0.5rem 1.5rem;
   }
   .header-items-right {
     display: flex;
