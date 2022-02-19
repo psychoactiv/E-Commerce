@@ -4,6 +4,12 @@
 
 html {
   font-size: 62.5%;
+  width: fit-content;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
 }
 
 /* Reset CSS */
@@ -16,6 +22,7 @@ html {
   --dark-cyan: darkcyan;
   --grey: grey;
   --teal: teal;
+  --aqua: aqua;
 }
 
 .rubik-font {
@@ -25,7 +32,14 @@ html {
 .head-font {
   font-family: "Noto Sans", sans-serif;
 }
-
+.footer-bottom {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.drawer-whole {
+  flex-grow: 1;
+}
 /* Navbar */
 .nav-bar {
   padding: 1rem;
@@ -34,6 +48,7 @@ html {
   box-shadow: 1px 2px 10px var(--grey);
   align-items: center;
   overflow: hidden;
+  background-color: var(--white);
 }
 
 .head-phone-logo {
@@ -47,13 +62,12 @@ html {
   font-size: 2.5rem;
   display: flex;
   align-items: center;
-  /* background-color: rgb(111, 112, 112); */
   border-radius: 9px;
   color: rgb(111, 112, 112);
 }
 
 .header-items-left {
-  width: 17rem;
+  width: 25rem;
   margin: 0.5rem 0;
 }
 
@@ -86,6 +100,11 @@ html {
   font-size: 1.7rem;
 }
 
+.header-icon-links a {
+  text-decoration: none;
+  color: var(--black);
+}
+
 .header-ic-link-description {
   font-size: 1rem;
 }
@@ -97,6 +116,7 @@ html {
   border: 1px solid var(--grey);
   text-align: right;
   padding-right: 4px;
+  margin-left: auto;
 }
 
 .home-side-bar.side-bar-ico {
@@ -125,7 +145,8 @@ html {
   cursor: pointer;
 }
 
-.header-icons:hover {
+.header-icon-links:hover .header-icons,
+.header-icon-links:hover .header-ic-link-description {
   color: var(--teal);
 }
 
@@ -306,7 +327,7 @@ html {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
   text-decoration: none;
-  color: aqua;
+  color: var(--aqua);
 }
 .disclaimer-footer {
   display: flex;
@@ -329,9 +350,43 @@ html {
   text-decoration: none;
   color: var(--dark700);
 }
+
+.drawer-items.general {
+  justify-content: start;
+}
+
+.input-last-side-icon {
+  position: absolute;
+  bottom: calc(50% - 1.5rem);
+  right: 10px;
+  font-size: 1.5rem;
+  color: var(--light-blue800);
+  cursor: pointer;
+}
+
+.all-btn-el.danger-btn.chng-btn-width {
+  display: block;
+  width: 95%;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
+
+.drawer-items li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.drawer-items:hover a,
+.drawer-items:hover i {
+  color: var(--dark-cyan);
+}
+
 @media screen and (min-width: 450px) {
   html {
     font-size: 70%;
+    width: 100%;
   }
   .header-items-right {
     flex-shrink: 2;
@@ -357,10 +412,6 @@ html {
   .category-title {
     font-size: 2rem;
   }
-}
-
-.drawer-items.general {
-  justify-content: start;
 }
 
 @media screen and (min-width: 800px) {
@@ -446,9 +497,11 @@ html {
     color: var(--dark800);
     font-size: 4rem;
   }
+
   .category-title {
     font-size: 4rem;
   }
+
   .e-comm-foot {
     font-size: 1.5rem;
   }
