@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Oswald:wght@500;700&family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+
+html {
+  font-size: 62.5%;
+  width: fit-content;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  --dark-cyan: darkcyan;
+  --grey: grey;
+  --teal: teal;
+  --aqua: aqua;
+}
+
+.rubik-font {
+  font-family: "Rubik", sans-serif;
+}
+
+.head-font {
+  font-family: "Noto Sans", sans-serif;
+}
+.footer-bottom {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.drawer-whole {
+  flex-grow: 1;
+}
+/* Navbar */
+.nav-bar {
+  padding: 1rem;
+  height: 12vh;
+  padding: 0.5rem;
+  box-shadow: 1px 2px 10px var(--grey);
+  align-items: center;
+  overflow: hidden;
+  background-color: var(--white);
+}
+
+.head-phone-logo {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.header-name {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  color: rgb(111, 112, 112);
+}
+
+.header-items-left {
+  width: 25rem;
+  margin: 0.5rem 0;
+}
+
+.head-name-links-flex {
+  width: 100%;
+}
+
+.header-items-right {
+  display: none;
+}
+
+.home-side-bar {
+  align-self: center;
+  font-size: 2rem;
+}
+
+.header-links {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: var(--dark-cyan);
+  align-self: center;
+  display: none;
+}
+
+.header-links:hover {
+  color: var(--grey);
+}
+
+.header-icon-links {
+  font-size: 1.7rem;
+}
+
+.header-icon-links a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.header-ic-link-description {
+  font-size: 1rem;
+}
+
+.header-input {
+  border-radius: 10px;
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid var(--grey);
+  text-align: right;
+  padding-right: 4px;
+  margin-left: auto;
+}
+
+.home-side-bar.side-bar-ico {
+  background-color: var(--white);
+}
+
+.header-input:focus {
+  outline-color: var(--dark-cyan);
+}
+
+.header-search-box {
+  position: relative;
+  width: max-content;
+  height: max-content;
+}
+
+.header-search {
+  position: absolute;
+  left: 0.7rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  color: var(--grey);
+}
+
+.header-icons {
+  cursor: pointer;
+}
+
+.header-icon-links:hover .header-icons,
+.header-icon-links:hover .header-ic-link-description {
+  color: var(--teal);
+}
+
+.top-image-container {
+  overflow: hidden;
+  display: grid;
+}
+
+.top-img {
+  width: 100%;
+  height: 100%;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.top-img-overlay {
+  font-size: 1rem;
+  text-align: center;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  align-items: end;
+  padding-top: 0rem;
+  overflow: hidden;
+}
+
+.brand-intro-container {
+  width: 70%;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.brand-intro-start {
+  color: var(--dark-cyan);
+  font-size: 1rem;
+}
+
+.brand-intro-end {
+  color: var(--grey);
+  font-size: 1rem;
+}
+
+.brand-name-on-intro {
+  color: var(--dark800);
+  font-size: 2rem;
+}
+
+.products-spec-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: 2rem auto 4rem auto;
+  justify-items: center;
+  row-gap: 1rem;
+  overflow: hidden;
+}
+
+.display-spec-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.display-spec-img:hover {
+  opacity: 0.9;
+}
+
+.spec-display-head {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.best-seller-head {
+  font-size: 2rem;
+}
+
+.category-title {
+  font-size: 1rem;
+}
+
+.product-display-img-container {
+  height: 10rem;
+  width: max-content;
+}
+
+.product-card-head {
+  font-size: 1.5rem;
+  color: var(--grey700);
+}
+
+.best-selling {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.product-cards {
+  width: 13rem;
+  border-radius: 5px;
+  box-shadow: 0px 1px 5px 2px var(--grey);
+  position: relative;
+}
+
+.child-wish-list-conatiner {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 999rem;
+}
+
+.child-wish-list {
+  color: var(--red-alert);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.child-wish-list:active {
+  color: var(--pure-red);
+  transform: scale(1.5);
+}
+
+.same-star.chng-pad {
+  padding: 0.3rem 0.5rem;
+  color: var(--white);
+}
+
+.brand-img-container {
+  height: 15rem;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.brand-logo-container {
+  justify-content: center;
+}
+
+.all-btn-el.add-to-cart.product-card-buy {
+  padding: 0.7rem 1rem;
+  border-radius: 0px 0px 5px 5px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.card-price {
+  font-size: 1.5rem;
+}
+
+.drawer-content .drawer-line {
+  font-size: 1.5rem;
+}
+.drawer-items.general li {
+  padding: 4%;
+  font-size: 1.5rem;
+}
+.drawer-items.general {
+  height: max-content;
+}
+.e-comm-foot {
+  height: max-content;
+  background-color: var(--dark800);
+  color: var(--white);
+  font-size: 1rem;
+  text-align: center;
+}
+.footer-links {
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: max-content;
+  padding: 3rem;
+}
+.footer-links a {
+  display: inline-block;
+  padding: 0.5rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--aqua);
+}
+.disclaimer-footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.redirect-product-page {
+  border-radius: 3px;
+  border: none;
+  background-color: var(--white);
+}
+
+.redirect-product-page:hover {
+  color: var(--blue-alert);
+}
+
+.redirect-product-page a {
+  text-decoration: none;
+  color: var(--dark700);
+}
+
+.drawer-items.general {
+  justify-content: start;
+}
+
+.input-last-side-icon {
+  position: absolute;
+  bottom: calc(50% - 1.5rem);
+  right: 10px;
+  font-size: 1.5rem;
+  color: var(--light-blue800);
+  cursor: pointer;
+}
+
+.all-btn-el.danger-btn.chng-btn-width {
+  display: block;
+  width: 95%;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+}
+
+.drawer-items li a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.drawer-items:hover a,
+.drawer-items:hover i {
+  color: var(--dark-cyan);
+}
+
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 70%;
+    width: 100%;
+  }
+  .header-items-right {
+    flex-shrink: 2;
+  }
+  .top-img-overlay {
+    font-size: 1.3rem;
+    padding-top: 0.5rem;
+  }
+  .brand-intro-start {
+    color: var(--dark-cyan);
+    font-size: 1.5rem;
+  }
+
+  .brand-intro-end {
+    color: var(--grey);
+    font-size: 1.5rem;
+  }
+
+  .brand-name-on-intro {
+    color: var(--dark800);
+    font-size: 2rem;
+  }
+  .category-title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  html {
+    font-size: 80%;
+  }
+  .header-items-left {
+    width: 35rem;
+    margin: 0.5rem 1.5rem;
+  }
+  .header-items-right {
+    display: flex;
+    width: 15rem;
+    margin: 0.5rem 0;
+  }
+  .header-input {
+    flex-shrink: 2;
+  }
+  .top-img-overlay {
+    font-size: 2rem;
+    padding-top: 2.5rem;
+  }
+  .brand-intro-start {
+    color: var(--dark-cyan);
+    font-size: 2.5rem;
+  }
+
+  .brand-intro-end {
+    color: var(--grey);
+    font-size: 2.5rem;
+  }
+
+  .brand-name-on-intro {
+    color: var(--dark800);
+    font-size: 3.5rem;
+  }
+  .home-side-bar.side-bar-ico {
+    display: none;
+  }
+  .header-links {
+    display: block;
+  }
+  .drawer-items.general li {
+    padding: 4%;
+    font-size: 2rem;
+  }
+  .category-title {
+    font-size: 3rem;
+  }
+  .header-input {
+    border-radius: 10px;
+    width: 15rem;
+    height: 3rem;
+    border: 1px solid var(--grey);
+    text-align: center;
+    padding-right: 4px;
+  }
+  .e-comm-foot {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  html {
+    font-size: 100%;
+  }
+
+  .top-img-overlay {
+    font-size: 3rem;
+  }
+
+  .brand-intro-start {
+    color: var(--dark-cyan);
+    font-size: 3rem;
+  }
+
+  .brand-intro-end {
+    color: var(--grey);
+    font-size: 3rem;
+  }
+
+  .brand-name-on-intro {
+    color: var(--dark800);
+    font-size: 4rem;
+  }
+
+  .category-title {
+    font-size: 4rem;
+  }
+
+  .e-comm-foot {
+    font-size: 1.5rem;
+  }
+}
