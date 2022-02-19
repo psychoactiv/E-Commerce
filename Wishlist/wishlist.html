@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhoneStop</title>
+    <link rel="stylesheet" href="https://ice-cream-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../Products/products.css" />
+    <script
+      src="https://kit.fontawesome.com/447874f45e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="flex nav-bar">
+      <div class="flex jc-fs header-items-left">
+        <i class="fas fa-bars home-side-bar side-bar-ico"></i>
+
+        <div class="flex jc-sb head-name-links-flex">
+          <div class="header-name rubik-font">
+            <div class="head-phone-logo">
+              <img
+                class="display-spec-img"
+                src="/Images/Subheading (4).png"
+                alt="phone"
+              />
+            </div>
+            PhoneStop
+          </div>
+
+          <a href="../index.html" class="header-links rubik-font">Home</a>
+          <a href="/Products/products.html" class="header-links rubik-font"
+            >Products</a
+          >
+        </div>
+      </div>
+
+      <div class="header-search-box mgn-lt-auto mgn-rt-auto">
+        <i class="fas fa-search header-search"></i>
+        <input
+          type="text"
+          placeholder="search here"
+          class="header-input text-center"
+        />
+      </div>
+
+      <div class="header-items-right flex mgn-lt-auto jc-sa">
+        <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a
+            href="/Wishlist/wishlist.html"
+            class="flex flex-direct-col align-i-center"
+          >
+            <i class="fas fa-heart header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Wishlist</div>
+          </a>
+        </div>
+
+        <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a href="/Cart/cart.html" class="flex flex-direct-col align-i-center">
+            <i class="fas fa-cart-plus header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Cart</div>
+          </a>
+        </div>
+
+        <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a
+            href="/Authentication/login/login.html"
+            class="flex flex-direct-col align-i-center"
+          >
+            <i class="fas fa-user-circle header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Login</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <aside class="drawer-sidebar">
+      <div class="drawer-user-info">
+        <div class="drawer-top-side">
+          <h3>User Name</h3>
+          <i class="fas fa-times"></i>
+        </div>
+        <p>Account name</p>
+      </div>
+      <div class="drawer-content">
+        <p class="drawer-line">Profile</p>
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Wishlist/wishlist.html"
+              ><i class="fas fa-heart header-icons"></i
+            ></a>
+          </li>
+          <li><a href="/Wishlist/wishlist.html">Wish-list</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Authentication/login/login.html"
+              ><i class="fas fa-user-circle header-icons"></i
+            ></a>
+          </li>
+          <li><a href="/Authentication/login/login.html">Login</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Cart/cart.html">
+              <i class="fas fa-cart-plus header-icons"></i>
+            </a>
+          </li>
+          <li><a href="/Cart/cart.html">Cart</a></li>
+        </ul>
+
+        <p class="drawer-line">Navigations</p>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/index.html">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li><a href="/index.html">Home</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Products/products.html">
+              <i class="fab fa-product-hunt"></i>
+            </a>
+          </li>
+          <li><a href="/Products/products.html">Products</a></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="footer-bottom">
+      <main class="drawer-whole">
+        <div class="drawer-main">
+          <h1 class="mgn-1 text-center font-h1 head-font">My Wishlist</h1>
+          <div class="flex flex-wrap jc-center col-gap-2 mgn-2 row-gap-2">
+            <div class="product-cards flex flex-direct-col jc-sb">
+              <div
+                class="product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto"
+              >
+                <img
+                  src="../Images/305e4829-81b4-423d-88d9-f550bab2e15721151133_182x182.jpg"
+                  alt="phone"
+                  class="display-spec-img"
+                />
+              </div>
+              <div class="child-wish-list-conatiner">
+                <i class="fas fa-heart child-wish-list"></i>
+              </div>
+              <div>
+                <h5 class="rubik-font mgn-tp-0-5 mgn-lt-1 product-card-head">
+                  SAMSUNG (BLACK 6GB)
+                </h5>
+                <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1">
+                  <span class="top-star same-star chng-pad">
+                    5 <i class="fas fa-star green-star"></i
+                  ></span>
+                  <span class="font-wt-black card-price">₹9,000</span>
+                </div>
+                <button
+                  class="all-btn-el add-to-cart product-card-buy mgn-tp-1"
+                >
+                  <i class="fas fa-shopping-cart"></i> ADD TO CART
+                </button>
+                <button class="all-btn-el danger-btn chng-btn-width">
+                  REMOVE
+                </button>
+              </div>
+            </div>
+
+            <div class="product-cards flex flex-direct-col jc-sb">
+              <div
+                class="product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto"
+              >
+                <img
+                  src="../Images/305e4829-81b4-423d-88d9-f550bab2e15721151133_182x182.jpg"
+                  alt="phone"
+                  class="display-spec-img"
+                />
+              </div>
+              <div class="child-wish-list-conatiner">
+                <i class="fas fa-heart child-wish-list"></i>
+              </div>
+              <div>
+                <h5 class="rubik-font mgn-tp-0-5 mgn-lt-1 product-card-head">
+                  SAMSUNG (BLACK 8GB)
+                </h5>
+                <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1">
+                  <span class="good-star same-star chng-pad">
+                    4 <i class="fas fa-star green-star"></i
+                  ></span>
+                  <span class="font-wt-black card-price">₹12,000</span>
+                </div>
+                <button
+                  class="all-btn-el add-to-cart product-card-buy mgn-tp-1"
+                >
+                  <i class="fas fa-shopping-cart"></i> ADD TO CART
+                </button>
+                <button class="all-btn-el danger-btn chng-btn-width">
+                  REMOVE
+                </button>
+              </div>
+            </div>
+
+            <div class="product-cards flex flex-direct-col jc-sb">
+              <div
+                class="product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto"
+              >
+                <img
+                  src="../Images/rog-phone-5-zs673ks-1a053in-asus-original-imagff5hufbu4eg5.jpeg"
+                  alt="phone"
+                  class="display-spec-img"
+                />
+              </div>
+              <div class="child-wish-list-conatiner">
+                <i class="fas fa-heart child-wish-list"></i>
+              </div>
+              <div>
+                <h5 class="rubik-font mgn-tp-0-5 mgn-lt-1 product-card-head">
+                  Asus rog phone 5 (Black, 64Gb)
+                </h5>
+                <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1">
+                  <span class="top-star same-star chng-pad">
+                    5 <i class="fas fa-star green-star"></i
+                  ></span>
+                  <span class="font-wt-black card-price">₹49,000</span>
+                </div>
+                <button
+                  class="all-btn-el add-to-cart product-card-buy mgn-tp-1"
+                >
+                  <i class="fas fa-shopping-cart"></i> ADD TO CART
+                </button>
+                <button class="all-btn-el danger-btn chng-btn-width">
+                  REMOVE
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="e-comm-foot">
+        <div class="flex col-gap-2 flex-wrap jc-center">
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Socials</div>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">github</a>
+          </div>
+
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Offline store</div>
+            <a href="#">Mumbai</a>
+            <a href="#">Bengaluru</a>
+            <a href="#">Delhi</a>
+          </div>
+
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Contacts</div>
+            <a href="#">+910000000000</a>
+            <a href="#">PhoneStop33PhoneStop@jmail.com</a>
+          </div>
+
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Credits</div>
+            <a href="#">Ice Cream UI</a>
+            <a href="#">FontAwesome</a>
+            <a href="#">pexels</a>
+          </div>
+        </div>
+
+        <div class="disclaimer-footer rubik-font">
+          <div>
+            This project's sole purpose is of being a Portfolio website no
+            brands and items listed are being provided, peace ✌
+          </div>
+          <div>Made with ❤</div>
+          <div>© 2022 PhoneStop</div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ice-cream-ui.netlify.app/components/navigation/drawer/drawer.js"></script>
+  </body>
+</html>
