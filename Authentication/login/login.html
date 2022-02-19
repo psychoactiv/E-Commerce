@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhoneStop</title>
+    <link rel="stylesheet" href="https://ice-cream-ui.netlify.app/main.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="../account.css" />
+    <script
+      src="https://kit.fontawesome.com/447874f45e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="flex nav-bar">
+      <div class="flex jc-fs header-items-left">
+        <i class="fas fa-bars home-side-bar side-bar-ico"></i>
+
+        <div class="flex jc-sb head-name-links-flex">
+          <div class="header-name rubik-font">
+            <div class="head-phone-logo">
+              <img
+                class="display-spec-img"
+                src="/Images/Subheading (4).png"
+                alt="phone"
+              />
+            </div>
+            PhoneStop
+          </div>
+
+          <a href="/index.html" class="header-links rubik-font">Home</a>
+          <a href="/Products/products.html" class="header-links rubik-font"
+            >Products</a
+          >
+        </div>
+      </div>
+
+      <div class="header-search-box mgn-lt-auto mgn-rt-auto">
+        <i class="fas fa-search header-search"></i>
+        <input
+          type="text"
+          placeholder="search here"
+          class="header-input text-center"
+        />
+      </div>
+
+      <div class="header-items-right flex mgn-lt-auto jc-sa">
+        <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a
+            href="/Wishlist/wishlist.html"
+            class="flex flex-direct-col align-i-center"
+          >
+            <i class="fas fa-heart header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Wishlist</div>
+          </a>
+        </div>
+
+        <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a href="/Cart/cart.html" class="flex flex-direct-col align-i-center">
+            <i class="fas fa-cart-plus header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Cart</div>
+          </a>
+        </div>
+
+        <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a
+            href="/Authentication/login/login.html"
+            class="flex flex-direct-col align-i-center"
+          >
+            <i class="fas fa-user-circle header-icons"></i>
+            <div class="header-ic-link-description rubik-font">Login</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <aside class="drawer-sidebar">
+      <div class="drawer-user-info">
+        <div class="drawer-top-side">
+          <h3>User Name</h3>
+          <i class="fas fa-times"></i>
+        </div>
+        <p>Account name</p>
+      </div>
+      <div class="drawer-content">
+        <p class="drawer-line">Profile</p>
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Wishlist/wishlist.html"
+              ><i class="fas fa-heart header-icons"></i
+            ></a>
+          </li>
+          <li><a href="/Wishlist/wishlist.html">Wish-list</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Authentication/login/login.html"
+              ><i class="fas fa-user-circle header-icons"></i
+            ></a>
+          </li>
+          <li><a href="/Authentication/login/login.html">Login</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Cart/cart.html">
+              <i class="fas fa-cart-plus header-icons"></i>
+            </a>
+          </li>
+          <li><a href="/Cart/cart.html">Cart</a></li>
+        </ul>
+
+        <p class="drawer-line">Navigations</p>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/index.html">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li><a href="/index.html">Home</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Products/products.html">
+              <i class="fab fa-product-hunt"></i>
+            </a>
+          </li>
+          <li><a href="/Products/products.html">Products</a></li>
+        </ul>
+      </div>
+    </aside>
+    <div class="footer-bottom">
+      <main class="drawer-whole">
+        <div class="drawer-main">
+          <div class="flex flex-wrap mgn-tp-1 contain-all-account-page">
+            <div
+              class="flex flex-direct-col row-gap-2 img-account-whole-container"
+            >
+              <h2
+                class="rubik-font text-center blue-color800 account-img-head mgn-tp-1"
+              >
+                Let's get you logged to awesomeness
+              </h2>
+              <div class="responsive-account-img-container">
+                <img
+                  src="../../Images/undraw_unlock_-24-mb.svg"
+                  class="responsive-account-img"
+                />
+              </div>
+            </div>
+
+            <div
+              class="rubik-font flex jc-center flex-direct-col account-user-input-container"
+            >
+              <form class="account-container-centering">
+                <h2 class="blue-color600 mgn-lt-0-5">Login</h2>
+                <label class="input-validation-conatiner">
+                  <input type="text" class="user-input-validation" required />
+                  <div class="input-placeholder">Enter your E-MAIL</div>
+                  <i class="fas fa-envelope input-last-side-icon"></i>
+                </label>
+                <label class="input-validation-conatiner">
+                  <input
+                    type="password"
+                    class="user-input-validation"
+                    required
+                  />
+                  <div class="input-placeholder">Enter your Password</div>
+                  <i class="fas fa-eye input-last-side-icon"></i>
+                </label>
+                <div class="flex jc-sb mgn-tp-1">
+                  <div>
+                    <input type="checkbox" value="Remember" />
+                    <span>Remember me</span>
+                  </div>
+                  <a href="../forgot/forgot.html" class="account-link-style"
+                    >forgot password?</a
+                  >
+                </div>
+
+                <button value="submit" class="account-submit-btn mgn-btm-1">
+                  Login
+                </button>
+                <a href="../sign-up/sign-up.html" class="account-link-style"
+                  >Create new account</a
+                >
+                <div class="mgn-tp-1">
+                  By creating an account or logging in, you agree with
+                  PhoneStop's
+                  <a href="#" class="account-link-style"
+                    >Terms and Conditions</a
+                  >
+                  and
+                  <a href="#" class="account-link-style">Privacy Policy.</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="e-comm-foot">
+        <div class="flex col-gap-2 flex-wrap jc-center">
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Socials</div>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">github</a>
+          </div>
+
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Offline store</div>
+            <a href="#">Mumbai</a>
+            <a href="#">Bengaluru</a>
+            <a href="#">Delhi</a>
+          </div>
+
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Contacts</div>
+            <a href="#">+910000000000</a>
+            <a href="#">PhoneStop33PhoneStop@jmail.com</a>
+          </div>
+
+          <div class="flex flex-direct-col footer-links">
+            <div class="head-font">Credits</div>
+            <a href="#">Ice Cream UI</a>
+            <a href="#">FontAwesome</a>
+            <a href="#">pexels</a>
+          </div>
+        </div>
+
+        <div class="disclaimer-footer rubik-font">
+          <div>
+            This project's sole purpose is of being a Portfolio website no
+            brands and items listed are being provided, peace ✌
+          </div>
+          <div>Made with ❤</div>
+          <div>© 2022 PhoneStop</div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://ice-cream-ui.netlify.app/components/navigation/drawer/drawer.js"></script>
+  </body>
+</html>
