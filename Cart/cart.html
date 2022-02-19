@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>PhoneStop</title>
+        <link
+          rel="stylesheet"
+          href="https://ice-cream-ui.netlify.app/main.css"
+        />
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="cart.css" />
+        <script
+          src="https://kit.fontawesome.com/447874f45e.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
+
+      <body>
+        <header class="flex nav-bar">
+          <div class="flex jc-fs header-items-left">
+            <i class="fas fa-bars home-side-bar side-bar-ico"></i>
+
+            <div class="flex jc-sb head-name-links-flex">
+              <div class="header-name rubik-font">
+                <div class="head-phone-logo">
+                  <img
+                    class="display-spec-img"
+                    src="/Images/Subheading (4).png"
+                    alt="phone"
+                  />
+                </div>
+                PhoneStop
+              </div>
+
+              <a href="/index.html" class="header-links rubik-font">Home</a>
+              <a href="/Products/products.html" class="header-links rubik-font"
+                >Products</a
+              >
+            </div>
+          </div>
+
+          <div class="header-search-box mgn-lt-auto mgn-rt-auto">
+            <i class="fas fa-search header-search"></i>
+            <input
+              type="text"
+              placeholder="search here"
+              class="header-input text-center"
+            />
+          </div>
+
+          <div class="header-items-right flex mgn-lt-auto jc-sa">
+            <div class="header-icon-links flex flex-direct-col align-i-center">
+              <a
+                href="/Wishlist/wishlist.html"
+                class="flex flex-direct-col align-i-center"
+              >
+                <i class="fas fa-heart header-icons"></i>
+                <div class="header-ic-link-description rubik-font">
+                  Wishlist
+                </div>
+              </a>
+            </div>
+
+            <div class="header-icon-links flex flex-direct-col align-i-center">
+              <a
+                href="/Cart/cart.html"
+                class="flex flex-direct-col align-i-center"
+              >
+                <i class="fas fa-cart-plus header-icons"></i>
+                <div class="header-ic-link-description rubik-font">Cart</div>
+              </a>
+            </div>
+
+            <div class="header-icon-links flex flex-direct-col align-i-center">
+              <a
+                href="/Authentication/login/login.html"
+                class="flex flex-direct-col align-i-center"
+              >
+                <i class="fas fa-user-circle header-icons"></i>
+                <div class="header-ic-link-description rubik-font">Login</div>
+              </a>
+            </div>
+          </div>
+        </header>
+        <aside class="drawer-sidebar">
+          <div class="drawer-user-info">
+            <div class="drawer-top-side">
+              <h3>User Name</h3>
+              <i class="fas fa-times"></i>
+            </div>
+            <p>Account name</p>
+          </div>
+          <div class="drawer-content">
+            <p class="drawer-line">Profile</p>
+            <ul class="drawer-items general">
+              <li>
+                <a href="/Wishlist/wishlist.html"
+                  ><i class="fas fa-heart header-icons"></i
+                ></a>
+              </li>
+              <li><a href="/Wishlist/wishlist.html">Wish-list</a></li>
+            </ul>
+
+            <ul class="drawer-items general">
+              <li>
+                <a href="/Authentication/login/login.html"
+                  ><i class="fas fa-user-circle header-icons"></i
+                ></a>
+              </li>
+              <li><a href="/Authentication/login/login.html">Login</a></li>
+            </ul>
+
+            <ul class="drawer-items general">
+              <li>
+                <a href="/Cart/cart.html">
+                  <i class="fas fa-cart-plus header-icons"></i>
+                </a>
+              </li>
+              <li><a href="/Cart/cart.html">Cart</a></li>
+            </ul>
+
+            <p class="drawer-line">Navigations</p>
+
+            <ul class="drawer-items general">
+              <li>
+                <a href="/index.html">
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+              <li><a href="/index.html">Home</a></li>
+            </ul>
+
+            <ul class="drawer-items general">
+              <li>
+                <a href="/Products/products.html">
+                  <i class="fab fa-product-hunt"></i>
+                </a>
+              </li>
+              <li><a href="/Products/products.html">Products</a></li>
+            </ul>
+          </div>
+        </aside>
+        <div class="footer-bottom">
+          <main class="drawer-whole">
+            <div class="drawer-main">
+              <div class="flex cart-body-container col-gap-2">
+                <div class="product-cart-main">
+                  <div
+                    class="blue-alert-light-bg blue-alert-dark-color free-delivery-dialouge rubik-font border-radius8"
+                  >
+                    🚚 yay! you get free delivery with this order!
+                  </div>
+                  <div
+                    class="flex flex-direct-col cart-product-container mgn-tp-1 mgn-btm-1 rubik-font border-radius8"
+                  >
+                    <div class="flex">
+                      <div class="product-cart-details">
+                        <div class="pd-1">APPLE IPhone 12 (Black, 64Gb)</div>
+                        <div class="flex col-gap-1 jc-center">
+                          <h3>₹49,000</h3>
+                          <del>₹69,000</del>
+                        </div>
+                        <div class="green-alert-dark-color text-center">
+                          You saved ₹20,000
+                        </div>
+                        <div class="flex col-gap-1 pd-1">
+                          <div class="grey-0-5-bdr600 pd-0-5--1 border-radius8">
+                            RAM : <span class="font-wt-bold">64GB</span>
+                          </div>
+                          <div
+                            class="grey-0-5-bdr600 pd-0-5--1 border-radius8 item-cart-qty"
+                          >
+                            QTY: <span class="font-wt-bold">1</span>
+                            <div class="cart-qty-btn-container">
+                              <button class="increase-cart-item-qty qty-btn">
+                                +
+                              </button>
+                              <button class="decrease-cart-item-qty qty-btn">
+                                -
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-item-img-container">
+                        <img
+                          src="../Images/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfwyzztfnh.jpeg"
+                          alt="Iphone"
+                          class="cart-item-img"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <button class="remove-from-cart-btn cart-card-btn">
+                        Remove
+                      </button>
+                      <button class="move-to-wishlist-btn cart-card-btn">
+                        Move to Wishlist
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-direct-col cart-product-container mgn-tp-1 mgn-btm-1 rubik-font border-radius8"
+                  >
+                    <div class="flex">
+                      <div class="product-cart-details">
+                        <div class="pd-1">Asus ROG II (Black, 8Gb)</div>
+                        <div class="flex col-gap-1 jc-center">
+                          <h3>₹20,000</h3>
+                          <del>₹30,000</del>
+                        </div>
+                        <div class="green-alert-dark-color text-center">
+                          You saved ₹10,000
+                        </div>
+                        <div class="flex col-gap-1 pd-1">
+                          <div class="grey-0-5-bdr600 pd-0-5--1 border-radius8">
+                            RAM : <span class="font-wt-bold">8GB</span>
+                          </div>
+                          <div
+                            class="grey-0-5-bdr600 pd-0-5--1 border-radius8 item-cart-qty"
+                          >
+                            QTY: <span class="font-wt-bold">1</span>
+                            <div class="cart-qty-btn-container">
+                              <button class="increase-cart-item-qty qty-btn">
+                                +
+                              </button>
+                              <button class="decrease-cart-item-qty qty-btn">
+                                -
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-item-img-container">
+                        <img
+                          src="../Images/asus-rog-phone-ii-zs660kl-1a017in-original-imafkkbmyuv5vygg.jpeg"
+                          alt="Asus-ROG"
+                          class="cart-item-img"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <button class="remove-from-cart-btn cart-card-btn">
+                        Remove
+                      </button>
+                      <button class="move-to-wishlist-btn cart-card-btn">
+                        Move to Wishlist
+                      </button>
+                    </div>
+                  </div>
+
+                  <div
+                    class="flex flex-direct-col cart-product-container mgn-tp-1 mgn-btm-1 rubik-font border-radius8"
+                  >
+                    <div class="flex">
+                      <div class="product-cart-details">
+                        <div class="pd-1">Vivo X60 (Black, 16Gb)</div>
+                        <div class="flex col-gap-1 jc-center">
+                          <h3>₹19,000</h3>
+                          <del>₹29,000</del>
+                        </div>
+                        <div class="green-alert-dark-color text-center">
+                          You saved ₹10,000
+                        </div>
+                        <div class="flex col-gap-1 pd-1">
+                          <div class="grey-0-5-bdr600 pd-0-5--1 border-radius8">
+                            RAM : <span class="font-wt-bold">16GB</span>
+                          </div>
+                          <div
+                            class="grey-0-5-bdr600 pd-0-5--1 border-radius8 item-cart-qty"
+                          >
+                            QTY: <span class="font-wt-bold">1</span>
+                            <div class="cart-qty-btn-container">
+                              <button class="increase-cart-item-qty qty-btn">
+                                +
+                              </button>
+                              <button class="decrease-cart-item-qty qty-btn">
+                                -
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-item-img-container">
+                        <img
+                          src="../Images/x60-v2045-vivo-original-imagfht4a9bggbxb.jpeg"
+                          alt="Asus-ROG"
+                          class="cart-item-img"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="flex">
+                      <button class="remove-from-cart-btn cart-card-btn">
+                        Remove
+                      </button>
+                      <button class="move-to-wishlist-btn cart-card-btn">
+                        Move to Wishlist
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="rubik-font grey-0-5-bdr600 border-radius5 checkout-cart-card"
+                >
+                  <div class="grey-bg400 cart-checkout-head">PRICE SUMMARY</div>
+                  <ul class="mgn-1">
+                    <li class="flex jc-sb mgn-0-5--0">
+                      <p>Total QTY of items</p>
+                      <p>3</p>
+                    </li>
+                    <li class="flex jc-sb mgn-0-5--0">
+                      <p>Total MRP (Incl. of taxes)</p>
+                      <p>₹128,000</p>
+                    </li>
+                    <li class="flex jc-sb mgn-0-5--0">
+                      <p>Delivery Fee</p>
+                      <p>FREE</p>
+                    </li>
+                    <li class="flex jc-sb mgn-0-5--0">
+                      <p>Total Discount</p>
+                      <p>-₹40,000</p>
+                    </li>
+                    <li class="flex jc-sb mgn-0-5--0">
+                      <p>Subtotal</p>
+                      <p>₹88,000</p>
+                    </li>
+                  </ul>
+                  <p
+                    class="green-alert-light-bg green-alert-dark-color border-radius10 text-center mgn-1"
+                  >
+                    You are saving ₹40,000 on this order
+                  </p>
+
+                  <div class="flex jc-sb pd-0-5 col-gap-1">
+                    <div>
+                      <small class="font-wt-semibold">Total</small>
+                      <div class="font-wt-bold">₹ 88,000</div>
+                    </div>
+                    <button class="pd-0-5--1 cart-address-btn">
+                      ADD ADDRESS
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="e-comm-foot">
+            <div class="flex col-gap-2 flex-wrap jc-center">
+              <div class="flex flex-direct-col footer-links">
+                <div class="head-font">Socials</div>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">github</a>
+              </div>
+
+              <div class="flex flex-direct-col footer-links">
+                <div class="head-font">Offline store</div>
+                <a href="#">Mumbai</a>
+                <a href="#">Bengaluru</a>
+                <a href="#">Delhi</a>
+              </div>
+
+              <div class="flex flex-direct-col footer-links">
+                <div class="head-font">Contacts</div>
+                <a href="#">+910000000000</a>
+                <a href="#">PhoneStop33PhoneStop@jmail.com</a>
+              </div>
+
+              <div class="flex flex-direct-col footer-links">
+                <div class="head-font">Credits</div>
+                <a href="#">Ice Cream UI</a>
+                <a href="#">FontAwesome</a>
+                <a href="#">pexels</a>
+              </div>
+            </div>
+
+            <div class="disclaimer-footer rubik-font">
+              <div>
+                This project's sole purpose is of being a Portfolio website no
+                brands and items listed are being provided, peace ✌
+              </div>
+              <div>Made with ❤</div>
+              <div>© 2022 PhoneStop</div>
+            </div>
+          </footer>
+        </div>
+        <script src="https://ice-cream-ui.netlify.app/components/navigation/drawer/drawer.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
