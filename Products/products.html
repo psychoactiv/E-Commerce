@@ -23,8 +23,8 @@
       <div class="flex jc-sb head-name-links-flex">
         <div class="header-name rubik-font"> <div class="head-phone-logo"><img class="display-spec-img" src="../Images/Subheading (4).png" alt="phone"></div>PhoneStop</div>
         
-        <a href="#" class="header-links rubik-font">Home</a>
-        <a href="#" class="header-links rubik-font">Products</a>
+        <a href="/index.html" class="header-links rubik-font">Home</a>
+        <a href="/Products/products.html" class="header-links rubik-font">Products</a>
       </div>
 
       </div>
@@ -41,19 +41,26 @@
       <div class="header-items-right flex mgn-lt-auto jc-sa">
 
         <div class="header-icon-links flex flex-direct-col align-i-center">
+        <a href="/Wishlist/wishlist.html" class="flex flex-direct-col align-i-center">
           <i class="fas fa-heart header-icons"></i>
           <div class="header-ic-link-description rubik-font">Wishlist</div>
+        </a>
         </div>
 
           <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a href="/Cart/cart.html" class="flex flex-direct-col align-i-center">
             <i class="fas fa-cart-plus header-icons"></i>
             <div class="header-ic-link-description rubik-font">Cart</div>
+          </a>
           </div>
 
           <div class="header-icon-links flex flex-direct-col align-i-center">
+          <a href="/Authentication/login/login.html" class="flex flex-direct-col align-i-center">
             <i class="fas fa-user-circle header-icons"></i>
             <div class="header-ic-link-description rubik-font">Login</div>
+          </a>
           </div>
+        </div>
     </header>
     <aside class="drawer-sidebar">
       <div class="drawer-user-info">
@@ -66,25 +73,55 @@
       <div class="drawer-content">
         <p class="drawer-line">Profile</p>
         <ul class="drawer-items general">
-          <li><i class="fas fa-heart header-icons"></i></li>
-          <li>Wish-list</li>
+          <li>
+            <a href="/Wishlist/wishlist.html"
+              ><i class="fas fa-heart header-icons"></i
+            ></a>
+          </li>
+          <li><a href="/Wishlist/wishlist.html">Wish-list</a></li>
         </ul>
-    
-        <ul class="drawer-items general">
-          <li><i class="fas fa-user-circle header-icons"></i></li>
-          <li>Login</li>
-        </ul>
-    
+
         <ul class="drawer-items general">
           <li>
-            <i class="fas fa-cart-plus header-icons"></i>
+            <a href="/Authentication/login/login.html"
+              ><i class="fas fa-user-circle header-icons"></i
+            ></a>
           </li>
-          <li>Cart</li>
+          <li><a href="/Authentication/login/login.html">Login</a></li>
         </ul>
-    
-       
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Cart/cart.html">
+              <i class="fas fa-cart-plus header-icons"></i>
+            </a>
+          </li>
+          <li><a href="/Cart/cart.html">Cart</a></li>
+        </ul>
+
+        <p class="drawer-line">Navigations</p>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/index.html">
+              <i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li><a href="/index.html">Home</a></li>
+        </ul>
+
+        <ul class="drawer-items general">
+          <li>
+            <a href="/Products/products.html">
+              <i class="fab fa-product-hunt"></i>
+            </a>
+          </li>
+          <li><a href="/Products/products.html">Products</a></li>
+        </ul>
+
       </div>
     </aside>
+    <div class="footer-bottom">
     <div class="flex product-body-container pd-tp-2-5">
     <aside class="fliter-options rubik-font">
       <h3>Filter by ratings</h3>
@@ -225,8 +262,8 @@
 
          <div class="flex flex-wrap best-selling col-gap-2 row-gap-2 jc-center align-i-center">
            <div class="product-cards flex flex-direct-col jc-sb">
-            <div class="out-of-stock-cards"></div>
-            <div class="out-of-stock-cards-text">OUT OF STOCK</div>
+             <div class="out-of-stock-cards"></div>
+             <div class="out-of-stock-cards-text">OUT OF STOCK</div>
              <div class=" product-display-img-container mgn-tp-0-5 mgn-rt-auto mgn-lt-auto">
                 <img src="../Images/apple-iphone-12-mini-dummyapplefsn-original-imafwgbfwyzztfnh.jpeg" alt="phone" class="display-spec-img">
              </div>
@@ -382,7 +419,7 @@
                      <div>
                       <h5 class="rubik-font  mgn-tp-0-5 mgn-lt-1 product-card-head">Asus ROG II (Black, 8Gb)</h5>
                       <div class="mgn-tp-1 flex col-gap-1 align-i-end mgn-lt-1"> <span class="top-star same-star  chng-pad"> 5 <i class="fas fa-star green-star"></i></span>
-                      <span class="font-wt-black card-price">₹20,00</span> </div>
+                      <span class="font-wt-black card-price">₹20,000</span> </div>
                       <button class="all-btn-el add-to-cart product-card-buy mgn-tp-1">
                        <i class="fas fa-shopping-cart "></i> ADD TO CART
                      </button>
@@ -537,6 +574,7 @@
     <div>© 2022 PhoneStop</div>
     </div>
   </footer>
+</div>
     <script src="https://ice-cream-ui.netlify.app/components/navigation/drawer/drawer.js"></script>
    <script src="products.js"></script>
   </body>
